@@ -1,0 +1,14 @@
+<p-table [value]="data" [tableStyle]="{'min-width': '50rem'}">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Month</th>
+            <th>Data</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product>
+        <tr>
+            <td>{{data.label}}</td>
+            <td>{{data.data}}</td>
+        </tr>
+    </ng-template>
+</p-table>
